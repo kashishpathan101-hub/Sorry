@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Harsh 💕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <div class="slider-container">
+    <div class="slides-wrapper" id="slidesWrapper">
+
+      <!-- ================= SLIDE 1 ================= -->
+      <div class="slide">
+        <div class="c1-card">
+
+          <div class="badge">🌸 FOR MY HARSH 💕</div>
+
+          <h1 class="c1-title">
+            Will you forgive me,<br>
+            <b>Harsh? 💕</b>
+          </h1>
+
+          <div class="c1-illustration">
+            <img
+              src="https://i.postimg.cc/W3QpMs3m/Cat.jpg"
+              alt="Cute Hug">
+          </div>
+
+          <div class="c1-dialogue">
+            Mtlb mere kuch galti bhi nhi thiii ahh still mujhe ignore kiyaa😑 prrrrr
+            Tumhare bina kuch bhi acha nahi lagta mujhe. 🥺💕
+          </div>
+
+          <div id="c1-actionArea" style="width:100%;">
+            <div class="choose-text">📖 CHOOSE ONE</div>
+
+            <div class="c1-buttons" id="c1-btnContainer">
+              <button class="btn" onclick="c1HandleYes()">
+                Yes! 💕
+              </button>
+              <button class="btn c1-btn-no" id="c1-noBtn" onclick="c1MoveNo()">
+                No
+              </button>
+            </div>
+          </div>
+
+          <div id="c1-successMsg" class="success-msg">
+            Yayy! Thankkk uhh Harshuuu! 💖<br>
+            <span>- Love, kashh 🙈</span>
+          </div>
+
+        </div>
+
+        <!-- THIS OPENS THE NEW CARD -->
+        <button class="next-card-btn" onclick="goToSlide(1)">
+          Next Card →
+        </button>
+      </div>
+
+      <!-- ================= SLIDE 2 - NEW CARD ============= -->
+      <div class="slide new-card-slide">
+
+        <!-- TYPE 1 : PHOTO STACK -->
+        <div id="newStage1" class="new-stage">
+          <div class="small-top-text">
+            💌 SOMETHING I MADE FOR YOU
+          </div>
+          <div class="new-title">
+            A little something...
+          </div>
+          <div class="photo-stack" id="photoStack" onclick="cyclePhotos()">
+            <div class="memory-card">
+          <img src="https://i.postimg.cc/TPKZnSs6/Snapchat-233509357.jpg"  >
+            </div>
+            <div class="memory-card">
+              <img src="https://i.postimg.cc/hjF3TGx2/IMG-20260813-190302-952.webp">
+            </div>
+            <div class="memory-card">
+              <img src="https://i.postimg.cc/4xq8R38t/Snapchat-1514573973(1).jpg">
+            </div>
+            <div class="memory-card">
+              <img src="https://i.postimg.cc/FFTVQRRD/27c7b79b8366d55f841102a38fc6fae5.jpg">
+            </div>
+          </div>
+          <div class="memory-text">
+            <b>Tap <br>
+              Mai sundar hu💕</b>
+            <br>
+            <span>something special is waiting for you...</span>
+          </div>
+        </div>
+
+        <!-- TYPE 2 : BOW GAME -->
+        <div id="newStage2" class="new-stage bow-stage" style="display:none;">
+          <div class="bow-heading">
+            🏹 HIT THE HEART 💕
+          </div>
+          <div class="bow-instruction">
+            Pull the arrow down<br>
+            and let go...
+          </div>
+          <canvas id="loveCanvas"></canvas>
+        </div>
+
+        <!-- TYPE 3 : FINAL -->
+        <div id="newStage3" class="new-stage final-stage" style="display:none;">
+          <div class="final-heart">
+            💕
+          </div>
+          <div class="final-small">
+            YOU MADE IT HERE...
+          </div>
+          <h1>
+            I Lobe<br>
+            uhh bbg
+          </h1>
+          <p>
+            I just wanted you to know<br>
+            how much you mean to me. 💕
+          </p>
+          <div class="final-name">
+            — kashhhh 🙈
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+ <script src="script.js"></script> </body> </html>
